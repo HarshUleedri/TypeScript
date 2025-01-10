@@ -9,9 +9,7 @@ Create a variable person1 and assign it values that match the Person interface.
 
 ---
 
-typescript
-
-```
+```typescript
 interface Person {
   name: string
   age: number
@@ -39,7 +37,7 @@ Create a variable car1 and assign it values that match the Car interface.
 
 Answer
 
-```
+```typescript
 interface car {
   make: string
   model: string
@@ -58,7 +56,7 @@ let car1: car {
 
 ---
 
-Extending Interfaces
+Q3:Extending Interfaces
 Define an interface Animal with the following properties:
 
 name (string)
@@ -69,7 +67,7 @@ breed (string)
 isFriendly (boolean)
 Create a variable dog1 that conforms to the Dog interface.
 
-```
+```typescript
 interface Animal {
   name: string
   age: number
@@ -91,14 +89,14 @@ const dog1: Dog {
 
 ---
 
-Using Type Aliases
+Q4:Using Type Aliases
 Create a type alias Point that represents a point in a 2D plane with the following properties:
 
 x (number)
 y (number)
 Then, create a variable point1 with x and y values that match the Point type.
 
-```
+```typescript
 type Point = {x: number, y:number}
 
 const point1: Point = {
@@ -110,14 +108,14 @@ const point1: Point = {
 
 ---
 
-Intersection Types
+Q5:Intersection Types
 Define two interfaces:
 
 Address with properties street (string), city (string), and zipCode (string).
 User with properties username (string), email (string), and isActive (boolean).
 Create a type alias UserWithAddress using an intersection type that combines User and Address. Then, create a variable userWithAddress1 that has all the properties from both interfaces.
 
-```
+```typescript
 
 interface Address {
   street: string;
@@ -143,7 +141,7 @@ let userWithAddress1: userWithAddress = {
 
 ```
 
-Implementing Interface with Functions
+Q6:Implementing Interface with Functions
 Define an interface Product with the following properties:
 
 id (number)
@@ -152,7 +150,7 @@ price (number)
 discount (function that takes a percentage as a number and returns the discounted price)
 Create a variable product1 that implements the Product interface, and implement the discount function to calculate the discounted price.
 
-```
+```typescript
 interface Product {
   id: number;
   name: string;
@@ -180,7 +178,7 @@ title (string)
 status (Status)
 Create a variable task1 that matches the Task interface.
 
-```
+```typescript
 type status = "active" | "inactive" | "pending";
 
 interface Task {
@@ -205,7 +203,7 @@ author (string)
 year (number)
 Then, create a variable books that is an array of Book objects and contains at least 3 books.
 
-```
+```typescript
 interface Book {
   title: string;
   author: string;
@@ -237,7 +235,7 @@ const books: Book[] = [
 Q9: Index Signature
 Define an interface Inventory where each item in the inventory can have a name (string) and a quantity (number). Use an index signature to allow the interface to accept items with any name and quantity.
 
-```
+```typescript
 interface Inventory {
   [items: string]: number;
 }
@@ -263,7 +261,7 @@ username (string)
 email (string)
 Make the id and username properties readonly, so they cannot be modified after the object is created. Create a variable user1 that adheres to the UserProfile interface.
 
-```
+```typescript
 interface userProfile {
   readonly id: number;
   readonly username: string;
@@ -292,7 +290,7 @@ batteryCapacity (number)
 range (number)
 Create a variable electricCar1 that conforms to the ElectricVehicle type.
 
-```
+```typescript
 interface Vehical {
   make: string;
   model: string;
@@ -320,7 +318,7 @@ const electricVehical1: ElectricVehical = {
 Q12: Interface with Function Signature
 Define an interface Operation with a method calculate that takes two numbers and returns a number. Then, create an object addition that implements the Operation interface and performs addition.
 
-```
+```typescript
 interface Operation {
   calculate: (par1: number, par2: number) => number;
 }
