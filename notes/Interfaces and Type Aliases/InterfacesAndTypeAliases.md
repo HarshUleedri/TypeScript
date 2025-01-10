@@ -9,6 +9,8 @@ Create a variable person1 and assign it values that match the Person interface.
 
 ---
 
+typescript
+
 ```
 interface Person {
   name: string
