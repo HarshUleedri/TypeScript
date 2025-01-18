@@ -423,3 +423,4 @@ const plane2 = new plane(20000); // 20,000 liters of fuel
 
 //Polymorphism: The main idea is that you can call the same method on different objects, but each object can respond to that method in its own way.
 ```
+
